@@ -10,14 +10,14 @@ export default function RouteWrapper({
   isPrivate,
   ...rest
 }) {
-  const sign = false;
-
-  if (sign && !isPrivate) {
-    return <Redirect to="/student/dashboard" />;
-  }
+  const sign = true;
 
   if (!sign && isPrivate) {
     return <Redirect to="/" />;
+  }
+
+  if (sign && !isPrivate) {
+    return <Redirect to="/students/dashboard" />;
   }
 
   const Layout = sign ? DefaultLayout : AuthLayout;

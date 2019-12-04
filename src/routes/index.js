@@ -19,16 +19,16 @@ export default function RouteWrapper() {
     <Switch>
       <Route path="/" exact component={SignIn} />
 
-      <Route path="/student/dashboard" component={DashboardS} isPrivate />
-      <Route path="/student/new" component={NewStudent} isPrivate />
-      <Route path="/student/edit/:id" component={EditStudent} isPrivate />
-      <Route path="/plan/dashboard" component={DashboardP} isPrivate />
-      <Route path="/plan/new" component={NewPlan} isPrivate />
-      <Route path="/plan/edit/:id" component={EditPlan} isPrivate />
-      <Route path="/registration/dashboard" component={DashboardR} isPrivate />
-      <Route path="/registration/new" component={NewRegistration} isPrivate />
+      <Route path="/students/dashboard" component={DashboardS} isPrivate />
+      <Route path="/students/new" component={NewStudent} isPrivate />
+      <Route path="/students/edit/:id" component={EditStudent} isPrivate />
+      <Route path="/plans/dashboard" component={DashboardP} isPrivate />
+      <Route path="/plans/new" component={NewPlan} isPrivate />
+      <Route path="/plans/edit/:id" component={EditPlan} isPrivate />
+      <Route path="/registrations/dashboard" component={DashboardR} isPrivate />
+      <Route path="/registrations/new" component={NewRegistration} isPrivate />
       <Route
-        path="/registration/edit/:id"
+        path="/registrations/edit/:id"
         component={EditRegistration}
         isPrivate
       />

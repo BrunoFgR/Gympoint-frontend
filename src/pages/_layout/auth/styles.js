@@ -49,15 +49,15 @@ export const Content = styled.div`
       margin: 0 30px 50px;
       color: #fff;
       height: 45px;
-      outline: 0;
+      font-weight: bold;
       border: 0;
       background: #ee4d64;
       border-radius: 4px;
+      font-size: 1.6rem;
       transition: background 0.2s;
-      font-weight: bold;
 
-      &:focus {
-        background: ${darken(0.03, '#ee4d64')};
+      &:hover {
+        background: ${darken(0.05, '#ee4d64')};
       }
     }
   }
