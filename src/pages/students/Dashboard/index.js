@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MdAdd, MdSearch } from 'react-icons/md';
+import history from '~/services/history';
 
 import { Container, Info, Controller, Input, Table } from './styles';
 
@@ -10,7 +11,7 @@ export default function Dashboard() {
       <Info>
         <h1>Gerenciando alunos</h1>
         <Controller>
-          <button type="button">
+          <button type="button" onClick={() => history.push('/students/new')}>
             <MdAdd color="#fff" size={20} />
             CADASTRAR
           </button>
