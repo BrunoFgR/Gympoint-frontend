@@ -7,7 +7,7 @@ export const Container = styled.div`
 `;
 
 export const Info = styled.div`
-  width: 80%;
+  width: 60%;
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -46,7 +46,7 @@ export const Controller = styled.div`
 `;
 
 export const FormContainer = styled.div`
-  width: 80%;
+  width: 60%;
   background: #fff;
   margin-top: 20px;
   border-radius: 4px;

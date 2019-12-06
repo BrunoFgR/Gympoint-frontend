@@ -1,6 +1,7 @@
 import React from 'react';
 import { MdKeyboardArrowLeft, MdCheck } from 'react-icons/md';
 import { Form, Input } from '@rocketseat/unform';
+
 import history from '~/services/history';
 
 import { Container, Info, Controller, FormContainer, Wrapper } from './styles';
@@ -9,11 +10,11 @@ export default function New() {
   return (
     <Container>
       <Info>
-        <h1>Cadastro de Alunos</h1>
+        <h1>Cadastro de Matrícula</h1>
         <Controller>
           <button
             type="button"
-            onClick={() => history.push('/students/dashboard')}
+            onClick={() => history.push('/registrations/dashboard')}
           >
             <MdKeyboardArrowLeft color="#fff" size={20} />
             Voltar
@@ -26,30 +27,32 @@ export default function New() {
       </Info>
       <FormContainer>
         <Form id="data">
-          <strong>NOME COMPLETO:</strong>
+          <strong>ALUNO:</strong>
           <Input
             type="text"
             name="name"
             placeholder="Digite o nome do estudante"
           />
-          <strong>ENDEREÇO DE E-MAIL:</strong>
-          <Input
-            type="email"
-            name="email"
-            placeholder="Digite o email do estudante"
-          />
           <Wrapper>
             <div>
-              <strong>IDADE:</strong>
-              <Input type="text" name="age" placeholder="Idade" />
+              <strong>PLANO:</strong>
+              <Input type="text" name="plan_id" placeholder="Plano" />
             </div>
             <div>
-              <strong>PESO(em kg):</strong>
-              <Input type="text" name="weight" placeholder="Peso" />
+              <strong>INÍCIO:</strong>
+              <Input
+                type="date"
+                name="date_start"
+                placeholder="Data de inicio"
+              />
             </div>
             <div>
-              <strong>ALTURA:</strong>
-              <Input type="text" name="height" placeholder="Altura" />
+              <strong>TÉRMINO:</strong>
+              <Input type="date" name="height" formNoValidate disabled />
+            </div>
+            <div>
+              <strong>VALOR A PAGAR:</strong>
+              <Input type="text" name="price" formNoValidate disabled />
             </div>
           </Wrapper>
         </Form>
