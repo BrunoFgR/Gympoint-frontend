@@ -26,7 +26,7 @@ export default function Header() {
             <Link to="/registrations/dashboard">MATRÍCULAS</Link>
           </li>
           <li>
-            <Link to="/registrations/new">PEDIDOS DE AUXÍLIO</Link>
+            <Link to="/help-orders">PEDIDOS DE AUXÍLIO</Link>
           </li>
         </ul>
       </Nav>

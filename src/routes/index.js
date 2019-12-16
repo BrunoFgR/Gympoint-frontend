@@ -9,6 +9,7 @@ import DashboardP from '~/pages/plan/Dashboard';
 import NewEditPlan from '~/pages/plan/NewEdit';
 import DashboardR from '~/pages/registration/Dashboard';
 import NewEditRegistration from '~/pages/registration/NewEdit';
+import Help_Order from '~/pages/help_order/index';
 import SignIn from '~/pages/SignIn';
 
 export default function RouteWrapper() {
@@ -33,6 +34,7 @@ export default function RouteWrapper() {
         component={NewEditRegistration}
         isPrivate
       />
+      <Route path="/help-orders" component={Help_Order} isPrivate />
     </Switch>
   );
 }

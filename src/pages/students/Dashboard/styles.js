@@ -52,6 +52,7 @@ export const Input = styled.div`
 
   input {
     border: 0;
+    font-size: 1.4rem;
   }
 
   svg {

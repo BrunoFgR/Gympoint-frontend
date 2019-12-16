@@ -7,7 +7,7 @@ export const Container = styled.div`
 `;
 
 export const Info = styled.div`
-  width: 80%;
+  width: 55%;
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -41,7 +41,7 @@ export const Controller = styled.div`
 `;
 
 export const Table = styled.div`
-  width: 80%;
+  width: 55%;
 
   table {
     background: #fff;
@@ -88,12 +88,8 @@ export const Table = styled.div`
         button {
           background: #fff;
           border: 0;
-          color: #de3b3b;
-          margin-left: 20px;
-        }
-
-        a {
           color: #4d85ee;
+          margin-left: 20px;
         }
       }
     }
